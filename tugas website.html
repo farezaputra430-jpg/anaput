@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Negeri 2 [Disiplin Berprestasi]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        :root {
+            --biru: #2196F3;
+            --hijau: #4CAF50;
+            --putih: #fff;
+            --abu: #f4f4f4;
+            --teks: #333;
+        }
+        
+        header {
+            background-color: var(--biru);
+            color: var(--putih);
+            padding: 1rem;
+            text-align: center;
+        }
+       
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: var(--hijau);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav ul li a {
+            color: var(--putih);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: background 0.3s;
+        }
+         
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
+         
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .profil {
+            margin-bottom: 2rem;
+        }
+        
+        .profil h2 {
+            color: var(--biru);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--biru);
+            padding-bottom: 0.5rem;
+        }
+          
+        .profil img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+         
+        .jurusan {
+            margin-bottom: 2rem;
+        }
+          
+        .jurusan h2 {
+            color: var(--biru);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--biru);
+            padding-bottom: 0.5rem;
+        }
+         
+        .jurusan-card {
+            background-color: var(--abu);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .jurusan-card h3 {
+            color: var(--hijau);
+            margin-bottom: 0.5rem;
+        }
+        
+        .kontak h2 {
+            color: var(--biru);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--biru);
+            padding-bottom: 0.5rem;
+        }
+        
+        footer {
+            background-color: var(--teks);
+            color: var(--putih);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SMK Negeri 2 Mojokerto</h1>
+        <p>"Disiplin,Berprestasi"</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#jurusan">Jurusan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="profil" id="profil">
+            <h2>Profil Sekolah</h2>
+            <img src="smk-negeri-2-kota-mojokerto-.jpg"
+                 alt="Logo SMKN 2 Mojokerto">
+            <p>SMK Negeri 2 didirikan pada tahun 2013 dengan tujuan memberikan pendidikan kejuruan yang berkualitas. Sekolah ini berfokus pada pembentukan siswa yang cerdas, kreatif, dan siap bekerja di dunia industri. Saat ini, sekolah memiliki lebih dari 500 siswa dan 30 guru yang berkwalifikasi.</p>
+        </section>
+
+        <section class="jurusan" id="jurusan">
+            <h2>Jurusan yang Tersedia</h2>
+            <div class="jurusan-card">
+                <h3>Desain Komunikasi Visual (DKV)</h3>
+                <p>Mempelajari tentang mengubah ide menjadi pesan visual yang efektif menggunakan elemen seperti tipografi, warna, gambar, dan tata letak, baik manual maupun digital (komputer grafis, aplikasi, perangkat lunak).</p>
+            </div>
+            <div class="jurusan-card">
+                <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                <p>Mempelajari tentang pembuatan aplikasi, pemrograman web, dan desain antarmuka pengguna.</p>
+            </div>
+            <div class="jurusan-card">
+                <h3>Kuliner</h3>
+                <p>Mempelajari tentang seni dan teknik pengolahan makanan secara mendalam, mulai dari pemilihan bahan, metode memasak (panas basah/kering, kontinental, tradisional), seni penyajian, hingga manajemen dapur profesional dan bisnis kuliner, termasuk aspek gizi, kebersihan (sanitasi pangan), dan budaya di balik hidangan untuk menciptakan pengalaman gastronomi yang kaya.</p>
+            </div>
+        </section>
+
+        <section class="kontak" id="kontak">
+            <h2>Kontak</h2>
+            <p>Alamat Lengkap: JL. PULOREJO, Pulorejo, Kec. Prajurit Kulon, Kota Mojokerto, Jawa Timur 61325.</p>
+            <p>NPSN: 69786498</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SMK Negeri 2 Mojokerto. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
